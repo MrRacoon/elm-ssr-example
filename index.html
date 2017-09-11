@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>SSElm</title>
   </head>
+  <script src="./index.js" charset="utf-8"></script>
   <body>
+    <!-- static -->
     <script type="text/javascript">
-      const elem = document.getElementById('main');
-      const app = Elm.Main.embed(elem);
+      const node = document.getElementById('main');
+      const app = Elm.Main.embed(node);
     </script>
-    <div id="main"/>
   </body>
 </html>
