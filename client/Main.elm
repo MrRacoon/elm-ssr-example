@@ -16,10 +16,11 @@ main =
         }
 
 
+
+-- elm-static-html requires a `view` variable at the root of the project.
+-- We're simply going to give our view the initial state.
+
+
 view : Html Msg
 view =
-    let
-        ( initModel, _ ) =
-            init
-    in
-        View.view initModel
+    View.view <| Tuple.first init
